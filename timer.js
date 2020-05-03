@@ -30,6 +30,7 @@ class Timer {
     tick = () => {
         if (this.timeRemaining <= 0) {
             this.pause()
+            alert('Counter has finished')
             if (this.onComplete) {
                 this.onComplete()
             }
